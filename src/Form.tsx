@@ -1,13 +1,19 @@
 import { useForm } from 'react-hook-form';
+const { submitData } = require("./api");
+
+
 
 export default function Form() {
+
     const {
         register,
         formState: { errors },
         handleSubmit,
     } = useForm();
-    const onSubmit = (data: any) => {
+    const onSubmit = async (data: any) => {
         alert(JSON.stringify(data));
+        submitData(data)
+
     };
     console.log(errors);
 
@@ -99,11 +105,9 @@ export default function Form() {
 
                 </div>
             </div>
-
-
-
         </form>
-
+    <hr/>    
+   
     </div>
     )
 }

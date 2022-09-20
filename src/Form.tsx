@@ -12,47 +12,75 @@ export default function Form() {
     console.log(errors);
 
     return (<div className="container">
+        <hr />
+        <div className='container text-center'>
+            <h3>Borrower Information</h3>
+        </div>
+        <hr />
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="row">
-            <div className="column">
-                <label>First name</label></div>
-                <div className="column">    <input
-                    type="text"
-                    {...register('firstName', { required: true, maxLength: 80 })}
-                />
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm">
+                        <div className="column">
+                            <label>1. Amount of Loan</label></div>
+                        <div className="column">    <input
+                            type="text"
+                            {...register('loanAmount', { required: true, maxLength: 80 })}
+                        />
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="column">
+                            <label>2. Name of Borrower</label></div>
+                        <div className="column">    <input
+                            type="text"
+                            {...register('borrowerName', { required: true, maxLength: 80 })}
+                        />
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="column">
+                            <label>3. Address</label></div>
+                        <div className="column">
+                            <textarea {...register("Address", { required: true, max: 100, min: 5, maxLength: 80 })} />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <div className="column">
+                                <label>1. Amount of Loan</label></div>
+                            <div className="column">   
+                            <input
+                            type="number"
+                            {...register('loanAmount', {
+                                required: true,
+                                maxLength: 11,
+                                minLength: 8,
+                            })}
+                        />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div>
+                        <hr className="margin-top: 20" />
+                        </div>
+                        <div className="col-sm">
+                            <div className="column">
+                                <label> </label></div>
+                            <div className="column">   
+                            <input className="btn btn-success" type="submit" />
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
-            </div>
-            <div className="row">
-            <div className="column">
-                <label>Mobile number</label>
-                </div>
-                <div className="column">
-                <input
-                    type="tel"
-                    {...register('mobileNumber', {
-                        required: true,
-                        maxLength: 11,
-                        minLength: 8,
-                    })}
-                />
-                </div>
-            </div>
-            <div>
-                <label>Are you a developer?</label>
-                <input
-                    type="radio"
-                    value="Yes"
-                    {...register('developer', { required: true })}
-                />
-                <input
-                    type="radio"
-                    value="No"
-                    {...register('developer', { required: true })}
-                />
             </div>
 
-            <input type="submit" />
+
+           
         </form>
+
     </div>
     )
 }

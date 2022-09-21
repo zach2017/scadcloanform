@@ -14,7 +14,6 @@ export default function App() {
                     <div>
                         <h4>South Central Alabama Development Commission (SCADC)</h4>
                         <h4>Revolving Business Loan Program</h4>
-                        Application for Business Loan
                     </div>
                 </header>
             </div>

@@ -23,18 +23,20 @@ export default function Banner() {
                 </main>
 
                 <h3>Additional Information on the Revolving Loan Fund</h3>
-
-                <div className="row text-left">
-                    <div className="col-xl-6 themed-grid-col border">Business Needs - Almost any business reason.</div>
-                    <div className="col-xl-6 themed-grid-col border">Almost any business reason.
-                        Real Estate, Construction, Machinery, Equipment, Inventory, Payroll
-                    </div>
-                </div>
-                <div className="row text-left">
-                    <div className="col-xl-6 themed-grid-col border">Types of Businesses</div>
-                    <div className="col-xl-6 themed-grid-col border">	Industry, Commercial, and Service Businesses
-                    </div>
-                </div>
+                <table>
+                    <tr >
+                        <td className="border"> Business Needs
+                        </td>
+                        <td className="border">Almost any business reason.
+                            Real Estate, Construction, Machinery, Equipment, Inventory, Payroll
+                        </td>
+                    </tr>
+                    <tr className="border">
+                        <td>Types of Businesses</td>
+                        <td className="border">	Industry, Commercial, and Service Businesses
+                        </td>
+                    </tr>
+                </table>
                 <div className="row text-left">
                     <div className="col-xl-6 themed-grid-col border">Minimum Years in Business</div>
                     <div className="col-xl-6 themed-grid-col border">None
@@ -62,16 +64,16 @@ export default function Banner() {
                 </div>
                 <div className="row text-left">
                     <div className="col-xl-6 themed-grid-col border">Payments	                  </div>
-                    <div className="col-xl-6 themed-grid-col border">Fixed Monthly Payments 
+                    <div className="col-xl-6 themed-grid-col border">Fixed Monthly Payments
                     </div>
                 </div>
                 <div className="row text-left">
                     <div className="col-xl-6 themed-grid-col border">Loan Amounts	</div>
                     <div className="col-xl-6 themed-grid-col border"> $  10,000 Minimum
-                $200,000 Maximum                
+                        $200,000 Maximum
                     </div>
                 </div>
-                
+
 
                 <hr />
                 <div className="text-center">

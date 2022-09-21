@@ -11,7 +11,7 @@ export default function Banner() {
             <div className="d-flex w-80 h-100 p-3 mx-center  border flex-column ">
                 <main className="px-3">
                     <h1>Program Description</h1>
-                    <p> Our business and project loans are ideal for Startups and Expanding businesses and financing is available for up to 100% of project costs. Our aim is to address the following need Six (6) Needs:</p>
+                    <p> Our business and project loans are ideal for Startups and Expanding businesses and financing is available for up to 100% of project costs. Our aim is to address the following Six (6) Needs:</p>
                     <ol>
                         <li>Business Support</li>
                         <li>Entrepreneurship</li>

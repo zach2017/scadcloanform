@@ -79,7 +79,7 @@ export default function Banner() {
                 <tr className="text-center">
                     <h2>TAKE YOUR FIRST STEP TODAY</h2>
 
-                    <a className="w-20 btn btn-lg btn-primary" href="https://form.jotform.com/222563727700151">Fillout the Pre-Qualify Application</a>
+                    <a className="w-20 btn btn-lg btn-primary" href="https://form.jotform.com/222928332101143">Fillout the Pre-Qualify Application</a>
                 </tr>
             </div>
 
